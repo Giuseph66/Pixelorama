@@ -1,0 +1,12 @@
+{
+	"name": "FolderBrowser",
+	"display_name": "Folder Browser",
+	"description": "Adds a dockable panel to open a folder and browse/open sprites and images from a tree, instead of using only modal file dialogs.",
+	"author": "Giuseph_Giangareli",
+	"version": "0.1.0",
+	"license": "MIT",
+	"nodes": [
+		"FolderBrowser.tscn"
+	],
+	"supported_api_versions": [8]
+}
