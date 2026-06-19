@@ -1,0 +1,12 @@
+{
+	"name": "AiAssistant",
+	"display_name": "AI Assistant",
+	"description": "Analyzes and edits the current cel with Gemini.",
+	"author": "Orama Interactive",
+	"version": "0.1.0",
+	"license": "MIT",
+	"nodes": [
+		"AiAssistant.tscn"
+	],
+	"supported_api_versions": [8]
+}
