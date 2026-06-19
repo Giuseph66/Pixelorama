@@ -33,6 +33,16 @@ var preferences: Array[Preference] = [
 		"quit_confirmation", "Startup/StartupContainer/QuitConfirmation", "button_pressed", false
 	),
 	Preference.new("ffmpeg_path", "Startup/StartupContainer/FFMPEGPath", "text", ""),
+	Preference.new("gemini_api_key", "AI/AIOptions/GeminiApiKey", "text", ""),
+	Preference.new(
+		"gemini_model", "AI/AIOptions/GeminiModel", "text", "gemini-2.5-flash"
+	),
+	Preference.new(
+		"gemini_image_model",
+		"AI/AIOptions/GeminiImageModel",
+		"text",
+		"gemini-3.1-flash-image"
+	),
 	Preference.new("shrink", "%ShrinkSlider", "value", Global.auto_content_scale_factor),
 	Preference.new("theme_font_index", "%FontOptionButton", "selected", 1),
 	Preference.new("font_size", "%FontSizeSlider", "value", 16),

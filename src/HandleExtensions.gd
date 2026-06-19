@@ -93,6 +93,7 @@ func _ready() -> void:
 func _add_internal_extensions() -> void:
 	_load_extension("FolderBrowser", true)
 	_load_extension("AiAssistant", true)
+	_load_extension("ColorBlindnessPreview", true)
 
 
 func install_extension(path: String) -> void:

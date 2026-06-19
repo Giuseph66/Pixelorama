@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://dbr6mulku2qju"]
 
 [ext_resource type="Script" uid="uid://bbphfji4k1f20" path="res://src/UI/Timeline/AnimationTimeline.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://byu3rtoipuvoc" path="res://src/UI/ToolsPanel/Tools.tscn" id="100_tools"]
+[ext_resource type="Script" uid="uid://blmflmhhbjeen" path="res://src/UI/ToolsPanel/ToolsBar.gd" id="101_toolsbar"]
+[ext_resource type="Texture2D" uid="uid://dwoilatxfh1s7" path="res://assets/graphics/misc/options.png" id="102_options"]
 [ext_resource type="Texture2D" uid="uid://d36mlbmq06q4e" path="res://assets/graphics/layers/new.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://dmhauk0dee42v" path="res://assets/graphics/layers/move_down.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://c7bha4a6x4bav" path="res://assets/graphics/layers/move_up.png" id="4"]
@@ -189,6 +192,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ToolsBar" type="HBoxContainer" parent="TimelineContainer"]
+layout_mode = 2
+script = ExtResource("101_toolsbar")
+
+[node name="Tools" parent="TimelineContainer/ToolsBar" instance=ExtResource("100_tools")]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="OptionsButton" type="Button" parent="TimelineContainer/ToolsBar"]
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 2
+size_flags_vertical = 0
+tooltip_text = "Tools options"
+icon = ExtResource("102_options")
 
 [node name="TimelineButtons" type="HBoxContainer" parent="TimelineContainer" unique_id=2029892245]
 layout_mode = 2

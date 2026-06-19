@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8colorblindprev1"]
+
+[ext_resource type="Script" path="res://src/Extensions/ColorBlindnessPreview/ColorBlindnessPreview.gd" id="1_cbprv"]
+
+[node name="ColorBlindnessPreview" type="Node"]
+script = ExtResource("1_cbprv")

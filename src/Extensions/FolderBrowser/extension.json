@@ -1,7 +1,7 @@
 {
 	"name": "FolderBrowser",
-	"display_name": "Folder Browser",
-	"description": "Adds a dockable panel to open a folder and browse/open sprites and images from a tree, instead of using only modal file dialogs.",
+	"display_name": "Pastas",
+	"description": "Adiciona um painel acoplável para abrir uma pasta e navegar/abrir sprites e imagens de uma árvore, em vez de usar apenas janelas de diálogo modais.",
 	"author": "Giuseph_Giangareli",
 	"version": "0.1.0",
 	"license": "MIT",

@@ -1,0 +1,12 @@
+{
+	"name": "ColorBlindnessPreview",
+	"display_name": "Color Blindness Preview",
+	"description": "Adds an icon next to the mirror/symmetry toggles that opens a modal previewing the current frame under common color vision deficiencies (protanopia, deuteranopia, tritanopia, achromatopsia), live as you draw. Helps verify sprites and UI palettes stay readable for color blind players. Read-only, never edits your pixels.",
+	"author": "Giuseph_Giangareli",
+	"version": "0.1.0",
+	"license": "MIT",
+	"nodes": [
+		"ColorBlindnessPreview.tscn"
+	],
+	"supported_api_versions": [8]
+}

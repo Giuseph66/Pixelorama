@@ -1512,6 +1512,65 @@ size_flags_horizontal = 3
 tooltip_text = "Specifies the tablet driver being used on Windows. If you have Windows Ink enabled, select winink."
 mouse_default_cursor_shape = 2
 
+[node name="AI" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide"]
+visible = false
+layout_mode = 2
+
+[node name="AIHeader" type="HBoxContainer" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI" groups=["HeaderLabels"]]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIHeader"]
+layout_mode = 2
+theme_type_variation = &"HeaderSmall"
+text = "AI Assistant"
+
+[node name="HSeparator" type="HSeparator" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIHeader"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="AIOptions" type="GridContainer" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI"]
+layout_mode = 2
+columns = 3
+
+[node name="GeminiApiKeyLabel" type="Label" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Gemini API key"
+
+[node name="GeminiApiKey" type="LineEdit" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "GEMINI_API_KEY environment variable takes precedence."
+secret = true
+placeholder_text = "Enter API key"
+
+[node name="GeminiModelLabel" type="Label" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Gemini model"
+
+[node name="GeminiModel" type="LineEdit" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "gemini-2.5-flash"
+
+[node name="GeminiImageModelLabel" type="Label" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Modelo de imagem"
+
+[node name="GeminiImageModel" type="LineEdit" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI/AIOptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "gemini-3.1-flash-image"
+
+[node name="SecurityWarning" type="Label" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide/AI"]
+layout_mode = 2
+text = "Warning: the API key is stored in Pixelorama's local config file. Prefer GEMINI_API_KEY on shared devices."
+autowrap_mode = 2
+
 [node name="Extensions" type="VBoxContainer" parent="HSplitContainer/VBoxContainer/ScrollContainer/RightSide" unique_id=326880860 node_paths=PackedStringArray("preferences_dialog", "add_extension_file_dialog")]
 unique_name_in_owner = true
 visible = false

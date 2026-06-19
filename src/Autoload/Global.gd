@@ -211,6 +211,12 @@ var open_last_project := false
 var quit_confirmation := false
 ## Found in Preferences. Refers to the ffmpeg location path.
 var ffmpeg_path := ""
+## Gemini API key configured by the user. Environment variable takes precedence.
+var gemini_api_key := ""
+## Gemini model used by the AI Assistant extension.
+var gemini_model := "gemini-2.5-flash"
+## Gemini image model used for native image generation and editing.
+var gemini_image_model := "gemini-3.1-flash-image"
 ## Found in Preferences. If [code]true[/code], the zoom is smooth.
 var smooth_zoom := true
 ## Found in Preferences. If [code]true[/code], the zoom is restricted to integral multiples of 100%.

@@ -33,11 +33,6 @@ percent = 0.8625
 first = SubResource("Resource_bp28t")
 second = SubResource("Resource_10g0s")
 
-[sub_resource type="Resource" id="Resource_12axs"]
-resource_name = "Tabs"
-script = ExtResource("1_t44r1")
-names = PackedStringArray("Tools")
-
 [sub_resource type="Resource" id="Resource_1omiw"]
 resource_name = "Tabs"
 script = ExtResource("1_t44r1")
@@ -124,20 +119,13 @@ direction = 1
 first = SubResource("Resource_26vov")
 second = SubResource("Resource_j3q3h")
 
-[sub_resource type="Resource" id="Resource_1xpva"]
-resource_name = "Split"
-script = ExtResource("2_rngtv")
-percent = 0.03125
-first = SubResource("Resource_12axs")
-second = SubResource("Resource_af0bk")
-
 [sub_resource type="Resource" id="Resource_6dytr"]
 resource_name = "Split"
 script = ExtResource("2_rngtv")
 direction = 1
 percent = 0.459538
 first = SubResource("Resource_otntk")
-second = SubResource("Resource_1xpva")
+second = SubResource("Resource_af0bk")
 
 [resource]
 resource_name = "Tallscreen"

@@ -4,22 +4,10 @@
 [ext_resource type="Script" uid="uid://bvvbi3x82xnut" path="res://addons/dockable_container/layout_split.gd" id="2_lw52w"]
 [ext_resource type="Script" uid="uid://icucbtatip66" path="res://addons/dockable_container/layout.gd" id="3_4h5wj"]
 
-[sub_resource type="Resource" id="Resource_atmme"]
-resource_name = "Tabs"
-script = ExtResource("1_jxh43")
-names = PackedStringArray("Tools")
-
 [sub_resource type="Resource" id="Resource_we4ee"]
 resource_name = "Tabs"
 script = ExtResource("1_jxh43")
 names = PackedStringArray("3D Object Tree")
-
-[sub_resource type="Resource" id="Resource_ww46h"]
-resource_name = "Split"
-script = ExtResource("2_lw52w")
-direction = 1
-first = SubResource("Resource_atmme")
-second = SubResource("Resource_we4ee")
 
 [sub_resource type="Resource" id="Resource_4b0py"]
 resource_name = "Tabs"
@@ -30,7 +18,7 @@ names = PackedStringArray("Tiles")
 resource_name = "Split"
 script = ExtResource("2_lw52w")
 direction = 1
-first = SubResource("Resource_ww46h")
+first = SubResource("Resource_we4ee")
 second = SubResource("Resource_4b0py")
 
 [sub_resource type="Resource" id="Resource_ouvfk"]

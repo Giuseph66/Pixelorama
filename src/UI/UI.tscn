@@ -228,9 +228,6 @@ hide_single_tab = true
 layout = SubResource("Resource_b6o2t")
 clone_layout_on_ready = false
 
-[node name="Tools" parent="DockableContainer" unique_id=492601693 instance=ExtResource("1")]
-layout_mode = 2
-
 [node name="Main Canvas" type="VBoxContainer" parent="DockableContainer" unique_id=412148062]
 layout_mode = 2
 size_flags_horizontal = 3
